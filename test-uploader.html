@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="common/assets/css/image-uploader.css">
+</head>
+
+<body class="bg-gray-50 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Image Uploader Test</h1>
+
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-xl font-semibold mb-4">Event Images</h2>
+            <div id="eventImageUploader"></div>
+        </div>
+    </div>
+
+    <script src="common/assets/js/image-uploader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            imageUploader = new ImageUploader({
+                container: '#eventImageUploader',
+                type: 'event',
+                entityId: 1, // Test with event ID 1
+                multiple: true,
+                maxFiles: 10
+            });
+        });
+    </script>
+</body>
+
+</html>
