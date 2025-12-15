@@ -230,6 +230,7 @@ eventmanage/
 - ✅ Settings (change app name, logo, colors)
 - ✅ Reports & analytics
 - ✅ QR code attendance scanner
+- ✅ Admin Panel id : admin  and Pass : Admin@1234
 
 ### Security Features
 - ✅ Password hashing (bcrypt)
